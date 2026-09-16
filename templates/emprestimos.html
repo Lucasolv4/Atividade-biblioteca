@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Gerenciar Empréstimos</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h2>Registrar Novo Empréstimo</h2>
+
+    <form action="/emprestimos/novo" method="POST">
+        <p>
+            <label>Aluno:</label><br>
+            <select name="cod_aluno" required>
+                <!-- OPCOES_ALUNOS -->
+            </select>
+        </p>
+        <p>
+            <label>Livro:</label><br>
+            <select name="cod_livro" required>
+                <!-- OPCOES_LIVROS -->
+            </select>
+        </p>
+        <p>
+            <label>Data de Devolução Prevista:</label><br>
+            <input type="date" name="data_devolucao_prevista" required>
+        </p>
+        <p>
+            <button type="submit">Realizar Empréstimo</button>
+            <a href="/livros">Voltar para Livros</a>
+        </p>
+    </form>
+
+    <h2>Histórico de Empréstimos</h2>
+    <table border="1" cellpadding="5" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Cód</th>
+                <th>Aluno</th>
+                <th>Livro</th>
+                <th>Data Empréstimo</th>
+                <th>Devolução Prevista</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- TABELA_EMPRESTIMOS -->
+        </tbody>
+    </table>
+</body>
+</html>

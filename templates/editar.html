@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Editar Livro</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h2>Editar Livro</h2>
+
+    <form action="/livros/editar/VALUE_COD" method="POST">
+        <p>
+            <label>Título:</label><br>
+            <input type="text" name="titulo" value="VALUE_TITULO" required>
+        </p>
+        <p>
+            <label>Autor:</label><br>
+            <input type="text" name="autor" value="VALUE_AUTOR" required>
+        </p>
+        <p>
+            <label>ISBN:</label><br>
+            <input type="text" name="isbn" value="VALUE_ISBN" required>
+        </p>
+        <p>
+            <label>Ano de Publicação:</label><br>
+            <input type="number" name="ano_publicacao" value="VALUE_ANO">
+        </p>
+        <p>
+            <label>Quantidade Disponível:</label><br>
+            <input type="number" name="qtd_disponivel" value="VALUE_QTD">
+        </p>
+        <p>
+            <button type="submit">Atualizar Livro</button>
+            <a href="/livros">Voltar</a>
+        </p>
+    </form>
+</body>
+</html>

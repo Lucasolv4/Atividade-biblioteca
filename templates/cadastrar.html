@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastrar Livro</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h2>Cadastrar Novo Livro</h2>
+
+    <form action="/livros/novo" method="POST">
+        <p>
+            <label>Título:</label><br>
+            <input type="text" name="titulo" required>
+        </p>
+        <p>
+            <label>Autor:</label><br>
+            <input type="text" name="autor" required>
+        </p>
+        <p>
+            <label>ISBN:</label><br>
+            <input type="text" name="isbn" required>
+        </p>
+        <p>
+            <label>Ano de Publicação:</label><br>
+            <input type="number" name="ano_publicacao">
+        </p>
+        <p>
+            <label>Quantidade Disponível:</label><br>
+            <input type="number" name="qtd_disponivel" value="1">
+        </p>
+        <p>
+            <button type="submit">Salvar Livro</button>
+            <a href="/livros">Voltar</a>
+        </p>
+    </form>
+</body>
+</html>
